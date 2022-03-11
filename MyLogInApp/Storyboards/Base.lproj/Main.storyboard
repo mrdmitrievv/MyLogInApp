@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="ViewController" customModule="MyLogInApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,15 +20,15 @@
                                 <rect key="frame" x="16" y="243" width="343" height="181"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="kyB-mG-Cb3">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="86"/>
+                                        <rect key="frame" x="30" y="0.0" width="283" height="86"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0QW-dF-4w3">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="283" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AVJ-Tu-wjD">
-                                                <rect key="frame" x="0.0" y="52" width="343" height="34"/>
+                                                <rect key="frame" x="0.0" y="52" width="283" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -60,8 +60,8 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="kyB-mG-Cb3" firstAttribute="leading" secondItem="HZo-tc-KzZ" secondAttribute="leading" id="8Es-DN-Pzn"/>
-                                    <constraint firstAttribute="trailing" secondItem="kyB-mG-Cb3" secondAttribute="trailing" id="h0p-Rg-Lg4"/>
+                                    <constraint firstItem="kyB-mG-Cb3" firstAttribute="leading" secondItem="HZo-tc-KzZ" secondAttribute="leading" constant="30" id="8Es-DN-Pzn"/>
+                                    <constraint firstAttribute="trailing" secondItem="kyB-mG-Cb3" secondAttribute="trailing" constant="30" id="h0p-Rg-Lg4"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -182,6 +182,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="9PO-DE-2gs" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jRf-TZ-7yJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
