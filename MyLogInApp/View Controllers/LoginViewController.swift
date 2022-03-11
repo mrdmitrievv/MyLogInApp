@@ -2,16 +2,19 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    // MARK: textFields outlets
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    // MARK: get user's data
     let user = User.getUserData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    
+    // MARK: logIn button action
     @IBAction func logInButton() {
         guard
             loginTextField.text == user.login,
@@ -27,7 +30,7 @@ class LoginViewController: UIViewController {
         performSegue(withIdentifier: "logIn", sender: .none)
     }
     
-    
+    // MARK: forgotButtons' actions
     @IBAction func forgotUserNameButton() {
         showAlert(
             title: "Oops",
@@ -42,12 +45,14 @@ class LoginViewController: UIViewController {
         )
     }
     
+    // MARK: added unwindSegue for logOut button
     @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
         loginTextField.text = ""
         passwordTextField.text = ""
     }
 }
 
+// MARK: func for showing Alerts
 extension LoginViewController {
     func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
