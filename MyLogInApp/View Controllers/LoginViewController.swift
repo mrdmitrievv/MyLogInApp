@@ -12,10 +12,19 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
-        loginTextField.text = ""
-        passwordTextField.text = ""
+    @IBAction func logInButton() {
+        guard
+            loginTextField.text == user.login,
+            passwordTextField.text == user.password
+        else {
+            showAlert(
+                title: "Incorrect login or password",
+                message: "Please, enter correct login or password",
+                textField: passwordTextField)
+            return
+        }
     }
+    
     
     @IBAction func forgotUserNameButton() {
         showAlert(
@@ -31,8 +40,10 @@ class LoginViewController: UIViewController {
         )
     }
     
-    
-    
+    @IBAction func unwindSegue(_ sender: UIStoryboardSegue) {
+        loginTextField.text = ""
+        passwordTextField.text = ""
+    }
 }
 
 extension LoginViewController {
@@ -40,6 +51,8 @@ extension LoginViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in textField?.text = nil }
         alert.addAction(okAction)
+        
+        textField?.text = nil
         present(alert, animated: true)
     }
 }
