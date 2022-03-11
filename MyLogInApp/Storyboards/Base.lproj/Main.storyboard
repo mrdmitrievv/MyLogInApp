@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="LoginViewController" customModule="MyLogInApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,10 +48,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgg-IC-9s5">
                                                 <rect key="frame" x="0.0" y="0.0" width="129" height="30"/>
                                                 <state key="normal" title="Forgot user name?"/>
+                                                <connections>
+                                                    <action selector="forgotUserNameButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="da5-QV-eh7"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXq-TQ-sSm">
                                                 <rect key="frame" x="219" y="0.0" width="123" height="30"/>
                                                 <state key="normal" title="Forgot password?"/>
+                                                <connections>
+                                                    <action selector="forgotPasswordButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="1cw-Ht-sD5"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -73,6 +79,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HZo-tc-KzZ" secondAttribute="trailing" constant="16" id="ebU-Ll-Bo9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="0QW-dF-4w3" id="GVq-Na-3Gs"/>
+                        <outlet property="passwordTextField" destination="AVJ-Tu-wjD" id="mJV-ai-xyw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
