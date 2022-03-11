@@ -23,6 +23,8 @@ class LoginViewController: UIViewController {
                 textField: passwordTextField)
             return
         }
+        
+        performSegue(withIdentifier: "logIn", sender: .none)
     }
     
     

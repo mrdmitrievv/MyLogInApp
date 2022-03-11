@@ -7,8 +7,8 @@ struct User {
     
     static func getUserData() -> User {
         User(
-            login: "mrdmitrievv",
-            password: "ef10pegg",
+            login: "1",
+            password: "1",
             person: Person(name: "Artem", surname: "Dmitriev")
         )
     }
