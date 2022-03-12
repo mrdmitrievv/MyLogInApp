@@ -133,6 +133,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="person.circle" catalog="system" id="cas-zE-Do4"/>
                     <navigationItem key="navigationItem" id="XXG-iD-JJ1"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="DZX-OU-msu" id="klV-ET-AGp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IaM-HF-6fQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="lsN-jI-XkA" userLabel="Exit" sceneMemberID="exit"/>
