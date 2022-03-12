@@ -15,6 +15,7 @@
 		ABECBCE027DA2FC500C91CEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABECBCDE27DA2FC500C91CEE /* LaunchScreen.storyboard */; };
 		ABECBCE827DA34BF00C91CEE /* WelcomeUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBCE727DA34BF00C91CEE /* WelcomeUserViewController.swift */; };
 		ABECBCEF27DBBFD300C91CEE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBCEE27DBBFD300C91CEE /* User.swift */; };
+		ABECBCF127DCC7E900C91CEE /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABECBCF027DCC7E900C91CEE /* AboutMeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		ABECBCE127DA2FC500C91CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ABECBCE727DA34BF00C91CEE /* WelcomeUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeUserViewController.swift; sourceTree = "<group>"; };
 		ABECBCEE27DBBFD300C91CEE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ABECBCF027DCC7E900C91CEE /* AboutMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				ABECBCE727DA34BF00C91CEE /* WelcomeUserViewController.swift */,
 				ABECBCD727DA2FBD00C91CEE /* LoginViewController.swift */,
+				ABECBCF027DCC7E900C91CEE /* AboutMeViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				ABECBCD827DA2FBD00C91CEE /* LoginViewController.swift in Sources */,
 				ABECBCD427DA2FBD00C91CEE /* AppDelegate.swift in Sources */,
 				ABECBCEF27DBBFD300C91CEE /* User.swift in Sources */,
+				ABECBCF127DCC7E900C91CEE /* AboutMeViewController.swift in Sources */,
 				ABECBCD627DA2FBD00C91CEE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

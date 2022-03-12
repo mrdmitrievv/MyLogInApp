@@ -9,9 +9,18 @@ class LoginViewController: UIViewController {
     // MARK: get user's data
     let user = User.getUserData()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        // Do any additional setup after loading the view.
+//    }
+    
+    // MARK: Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let tabBarController = segue.destination as! UITabBarController
+        let welcomeVC = tabBarController.viewControllers?.first as! WelcomeUserViewController
+//        let navigationVC = tabBarController.viewControllers?.last as! UINavigationController
+        welcomeVC.userLogin = user.login
     }
     
     // MARK: logIn button action
