@@ -19,8 +19,10 @@ class LoginViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tabBarController = segue.destination as! UITabBarController
         let welcomeVC = tabBarController.viewControllers?.first as! WelcomeUserViewController
-//        let navigationVC = tabBarController.viewControllers?.last as! UINavigationController
-        welcomeVC.userLogin = user.login
+        let navigationVC = tabBarController.viewControllers?.last as! UINavigationController
+        let aboutMeVC = navigationVC.topViewController as! AboutMeViewController
+        welcomeVC.user = user
+        aboutMeVC.user = user
     }
     
     // MARK: logIn button action

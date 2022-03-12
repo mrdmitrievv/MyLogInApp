@@ -169,9 +169,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="3It-qf-Ndj"/>
-                    <connections>
-                        <outlet property="fullNameTitle" destination="3It-qf-Ndj" id="Al9-4N-AnE"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W0R-o4-Cir" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
